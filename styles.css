@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: linear-gradient(45deg, #000000e8, #3d5588, rgb(0, 140, 255));
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.evento {
+    background: white;
+    border: 1px solid #000000;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s, color 0.3s, background-color 0.3s;
+}
+
+.evento.active {
+    background-color: rgba(19, 26, 66, 0.9);
+    color: white;
+}
+
+.imagem-evento {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: none;
+    text-align: center;
+}
+
+.imagem1-evento {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: none;
+    text-align: center;
+}
+
+.imagem2-evento {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: none;
+    text-align: center;
+}
+
+.evento.active .imagem-evento,
+.evento.active .imagem1-evento,
+.evento.active .imagem2-evento {
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.texto-evento {
+    display: none;
+}
+
+.evento.active .texto-evento {
+    display: block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #0d440f;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:active {
+    background-color: #2a612d;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+}
+
+.imagens-evento {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.imagem1-evento {
+    width: 23%;
+    margin: 1%;
+    transition: transform 0.3s;
+}
+
+.imagem2-evento {
+    height: 33%;
+    width: 33%;
+    margin: 1%;
+    transition: transform 0.3s;
+}

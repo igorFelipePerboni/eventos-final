@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos do Colégio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Colégio Estadual Santo Agostinho</h1>
+        <p>Sejam bem-vindos à minha página web com o objetivo de expor diversos eventos que aconteceram
+             em nosso colégio de forma interativa e interessante para os usuários!</p>
+    </header>
+    <main>
+        <section id="eventos">
+            <h2>Eventos Realizados</h2>
+            <div class="evento">
+                <h3>Ideação:</h3>
+                <div class="texto-evento">
+                                    </div>
+                <img class="imagem-evento" src="ideacao.jpg">
+            </div>
+            <div class="evento">
+                <h3>Páscoa:</h3>
+                <div class="texto-evento">
+                    <p>A Páscoa é celebrada com muita alegria em nossa escola! Este ano foi marcada por uma apresentação emocionante que nos encheu de alegria e esperança.</p>
+                </div>
+                <img class="imagem-evento" src="Páscoa.jpg">
+            </div>
+            <div class="evento">
+                <h3>Mostras Culturais:</h3>
+                <div class="texto-evento">
+                    <p>Celebre a diversidade cultural! Nossas mostras culturais trazem diversidade a partir de apresentações, amostras de artes e danças que valorizam diferentes culturas e identidades."</p>
+                </div>
+                <div class="imagens-evento">
+                    <img class="imagem1-evento" src="mostra1.jpg">
+                    <img class="imagem1-evento" src="mostra2.jpg">
+                    <img class="imagem1-evento" src="mostra3.jpg">
+                    <img class="imagem1-evento" src="mostra4.jpg">
+                </div>
+            </div>
+            <div class="evento">
+                <h3>Interclasse:</h3>
+                <div class="texto-evento">
+                    <p> A rivalidade saudável é o tempero dos jogos interclasses! Torcidas organizadas, disputas acirradas e muita diversão marcam nossos campeonatos esportivos. Além de promover a prática de atividades físicas, os jogos interclasses fortalecem o espírito de equipe e a amizade entre os alunos.</p>
+                </div>
+                <img class="imagem-evento" src="4-Interclasse.jpg">
+            </div>
+            <div class="evento">
+                <h3>Voluntariados "Rio Grande do Sul":</h3>
+                <div class="texto-evento">
+                </div>
+                <img class="imagem-evento" src="5-voluntariados.jpg">
+            </div>
+            <div class="evento">
+                <h3>Acolhimento:</h3>
+                <div class="texto-evento">
+                    <p>Nosso acolhimento foi marcado por um gesto simples, mas poderoso: um abraço! Professores e alunos se uniram em um grande abraço coletivo, demonstrando o carinho e a afetividade que marcam nossa comunidade escolar.</p>
+                </div>
+                <img class="imagem-evento" src="Acolhimento.jpg">
+            </div>
+            <div class="evento">
+                <h3>Show de Talentos:</h3>
+                <div class="texto-evento">
+                    <p>Brilhe no palco! Nosso show de talentos é a oportunidade perfeita para os alunos mostrarem seus talentos artísticos. Cantores, dançarinos, músicos e outros artistas se apresentam para um público entusiasmado.</p>
+                </div>
+                <div class="imagens-evento">
+                    <img class="imagem2-evento" src="talentos1.jpg">
+                    <img class="imagem2-evento" src="talentos2.jpg">
+                    <img class="imagem2-evento" src="talentos3.jpg">
+                </div>
+            </div>
+            <div class="evento">
+                <h3>SAEB:</h3>
+                <div class="texto-evento">
+                    <p>Avaliando nossos resultados! A participação no SAEB nos permite avaliar o desempenho dos nossos alunos e identificar as áreas que precisam de mais atenção. Os resultados dessa avaliação são utilizados para melhorar o processo de ensino e aprendizagem em nossa escola.</p>
+                </div>
+                <img class="imagem-evento" src="saeb.jpg">
+            </div>
+            <div class="evento">
+                <h3>Busca Ativa:</h3>
+                <div class="texto-evento">
+                    <p>Um Passo Essencial para a Inclusão Escolar
+                        A busca ativa é uma estratégia fundamental para garantir o direito à educação de todos os estudantes, especialmente aqueles que se encontram em situação de vulnerabilidade ou que estão fora da escola. Uma das ações mais eficazes dentro da busca ativa é a realização de visitas domiciliares.</p>
+                </div>
+                <img class="imagem-evento" src="Buscaativa.jpg">
+            </div>
+            <div class="evento">
+                <h3>Agosto Lilas:</h3>
+                <div class="texto-evento">
+                    <p> Agosto Lilás é o mês de conscientização sobre a violência contra a mulher. Em nossa escola, realizamos uma apresentação para abordar essa temática e promover a igualdade de gênero.</p>
+                </div>
+                <img class="imagem-evento" src="Agostolilas.jpg">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Endereço: R. Gen. Rondon, 797 - Centro, Palotina - PR, 85950-000</p>
+        <p>Telefone: (44) 3649-6060</p>
+        <p>&copy; 2024 Colégio Estadual Santo Agostinho. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const eventos = document.querySelectorAll('.evento');
+
+eventos.forEach(evento => {
+  let isOpen = false;
+
+  evento.addEventListener('click', () => {
+    isOpen = !isOpen;
+    evento.classList.toggle('active', isOpen);
+  });
+});
+      </script>
+      </body>
+      </html>
+</body>
+</html>
